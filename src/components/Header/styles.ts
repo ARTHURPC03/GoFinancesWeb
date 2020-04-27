@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 interface ContainerProps {
-  size?: 'small' | 'large';
+  size?: 'small' | 'large'
 }
 
 export const Container = styled.div<ContainerProps>`
@@ -33,4 +33,4 @@ export const Container = styled.div<ContainerProps>`
       }
     }
   }
-`;
+`

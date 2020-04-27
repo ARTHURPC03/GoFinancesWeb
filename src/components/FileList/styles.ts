@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.ul`
   margin-top: 20px;
@@ -13,7 +13,7 @@ export const Container = styled.ul`
       margin-top: 15px;
     }
   }
-`;
+`
 
 export const FileInfo = styled.div`
   display: flex;
@@ -40,4 +40,4 @@ export const FileInfo = styled.div`
       margin-top: 5px;
     }
   }
-`;
+`

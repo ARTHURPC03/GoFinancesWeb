@@ -44,7 +44,8 @@
         "ts": "never",
         "tsx": "never"
       }
-    ]
+    ],
+    "semi":"off"
   },
   "settings": {
     "import/resolver": {

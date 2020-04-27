@@ -1,4 +1,3 @@
-const formatValue = (value: number): string =>
-  Intl.NumberFormat().format(value); // TODO
+const formatValue = (value: number): string => Intl.NumberFormat().format(value) // TODO
 
-export default formatValue;
+export default formatValue

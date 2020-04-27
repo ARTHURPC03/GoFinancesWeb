@@ -1,13 +1,13 @@
-import React from 'react';
+import React from 'react'
 
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
-import { Container } from './styles';
+import { Container } from './styles'
 
-import Logo from '../../assets/logo.svg';
+import Logo from '../../assets/logo.svg'
 
 interface HeaderProps {
-  size?: 'small' | 'large';
+  size?: 'small' | 'large'
 }
 
 const Header: React.FC<HeaderProps> = ({ size = 'large' }: HeaderProps) => (
@@ -21,6 +21,6 @@ const Header: React.FC<HeaderProps> = ({ size = 'large' }: HeaderProps) => (
       </nav>
     </header>
   </Container>
-);
+)
 
-export default Header;
+export default Header
