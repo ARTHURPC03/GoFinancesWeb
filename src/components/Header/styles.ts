@@ -5,9 +5,9 @@ interface ContainerProps {
 }
 
 export const Container = styled.div<ContainerProps>`
-  background: #000000;
+  background: ${props => props.theme.colors.primary};
   padding: 30px 0;
-
+  transition: all 0.2s;
   header {
     width: 1120px;
     margin: 0 auto;
@@ -15,10 +15,10 @@ export const Container = styled.div<ContainerProps>`
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    transition: all 0.2s;
     nav {
       a {
-        color: #fff;
+        color: ${props => props.theme.colors.color};
         text-decoration: none;
         font-size: 16px;
         transition: opacity 0.2s;

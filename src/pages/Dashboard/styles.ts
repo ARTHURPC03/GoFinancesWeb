@@ -29,6 +29,19 @@ export const Card = styled.div`
   border-radius: 5px;
   color: #fff;
 
+  transition: all 0.2s ease 0s;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  border-image: initial;
+  &:hover {
+    transform: translate3d(42px, -62px, -135px);
+    border-width: 2px;
+    border-style: solid;
+    border-color: ${props => props.theme.colors.border};
+    border-image: initial;
+  }
+
   header {
     display: flex;
     align-items: center;
@@ -55,7 +68,7 @@ export const TableContainer = styled.section`
     border-spacing: 0 8px;
 
     th {
-      color: #fff;
+      color: ${props => props.theme.colors.color};
       font-weight: normal;
       padding: 20px 32px;
       text-align: left;
@@ -66,13 +79,13 @@ export const TableContainer = styled.section`
     td {
       padding: 20px 32px;
       border: 0;
-      background: #333;
+      background: ${props => props.theme.colors.backgroundFile};
       font-size: 16px;
       font-weight: normal;
-      color: #fff;
+      color: ${props => props.theme.colors.color};
 
       &.title {
-        color: #fff;
+        color: ${props => props.theme.colors.color};
       }
 
       &.income {
